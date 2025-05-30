@@ -37,10 +37,8 @@ jobs:
       uses: sonarsource/sonarqube-scan-action@master
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONAR_HOST_URL: http://182.163.122.114:9000
 
     - name: Publish Quality Gate Status
       uses: sonarsource/sonarqube-quality-gate-action@master
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        
